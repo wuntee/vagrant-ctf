@@ -42,7 +42,7 @@ curl https://raw.githubusercontent.com/wuntee/dotfiles/master/zshrc > ~/.zshrc
 echo 'PROMPT='"'"'%{$fg[magenta]%}[%m]%{$reset_color%} %{$fg[cyan]%}%0~%{$reset_color%}%{$fg[red]%}|%{$reset_color%}$(git_prompt_info)%{$fg[cyan]%}⇒%{$reset_color%} '"'"'' >> $HOME/.oh-my-zsh/themes/miloshadzic.zsh-theme
 
 # gdbinit
-curl https://raw.githubusercontent.com/gdbinit/Gdbinit/master/gdbinit > ~/.gdbinit
+# curl https://raw.githubusercontent.com/gdbinit/Gdbinit/master/gdbinit > ~/.gdbinit
 
 # Non apt'able tools
 # binwalk
@@ -51,6 +51,12 @@ pushd tools
 git clone https://github.com/devttys0/binwalk
 pushd binwalk
 sudo python setup.py install
+popd
+
+# pwndbg
+git clone https://github.com/pwndbg/pwndbg
+pushd pwndbg
+./setup.sh
 popd
 
 popd
