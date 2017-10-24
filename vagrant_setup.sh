@@ -44,6 +44,9 @@ echo 'PROMPT='"'"'%{$fg[magenta]%}[%m]%{$reset_color%} %{$fg[cyan]%}%0~%{$reset_
 # gdbinit
 # curl https://raw.githubusercontent.com/gdbinit/Gdbinit/master/gdbinit > ~/.gdbinit
 
+# gdb-pida (TODO: try out to see if its better than gdbinit)
+# https://github.com/longld/peda
+
 # Non apt'able tools
 # binwalk
 mkdir tools
